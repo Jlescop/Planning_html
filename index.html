@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effective Scheduling: Adhering to Best Practices and Core Guidelines</title>
+    <title>Scheduling Best Practices and Core Guidelines</title>
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="icon" type="image/x-icon" href="images/icone_cop.ico">
 </head>
@@ -11,7 +11,7 @@
 <body>
 	
 	<div> <!-- Introduction text -->
-		<h1> Effective Scheduling: Adhering to Best Practices and Core Guidelines </h1>
+		<h1> Scheduling Best Practices and Core Guidelines </h1>
 		<p> The schedule below has been realised to control a smal industrialization project with: </p>
 			<ul>
 				<li> A Design phase based on specifications shared as main input </li>
@@ -27,22 +27,25 @@
 	</div>
 	
 	<div> <!-- Buttons -->
+		<!-- Links -->
 		<div class="tooltip" style="position: relative; margin-left: 50px; margin-right: 25px; margin-bottom: 15px">
 			<button onclick="showLinks()" id="buttonLinks" class="bBtn" type="button">Show links</button>
 			<span class="tooltiptext">
 				<h4>Links (or Relationships)</h4>
-				blablabl
+				Links are essential for building a good schedule. They represent the logic between activities.
 			</span>
 		</div>
 
+		<!-- Baseline -->
 		<div class="tooltip" style="position: relative; margin-left: 25px; margin-right: 25px; margin-bottom: 15px">
 			<button onclick="showBaseline()" id="buttonBaseline" class="yBtn" type="button">Show baseline</button>
 			<span class="tooltiptext">
 				<h4>Baseline (or Reference)</h4>
-				blablabl
+				The Baseline is essential to measure the performance of the project. It has to be agreed upon with all stakeholders.
 			</span>
 		</div>
-		
+
+		<!-- Quality Report -->
 		<div class="tooltip" style="position: relative; margin-left: 25px; margin-right: 25px; margin-bottom: 15px">
 			<button onclick="qualityReport()" id="buttonQuality" class="bBtn" type="bBtn">Show quality report</button>
 		</div>
@@ -65,7 +68,7 @@
 			<div class="triangle-bottom"></div>
             <span class="tooltiptext">
 				<h4>Data Date</h4>
-				<i>[description do be done]</i>
+				<i>The Data Date is the latest update date. It differs from the current date.</i>
 			</span>			
         </div>		
 		
@@ -74,7 +77,8 @@
 			<div class="circle">1</div>
             <span class="tooltiptext">
 				<h4>WBS & Unique ID</h4>
-				<i>[description do be done]</i>
+				<i>The WBS is clearly defined and follows the project's structure.
+				Every Activity has a unique identifier.</i>
 			</span>			
         </div>
 
@@ -83,7 +87,7 @@
 			<div class="circle">2</div>
             <span class="tooltiptext">
 				<h4>Activity Name</h4>
-				<i>[description do be done]</i>
+				<i>The Activity Name must be clear to avoid any confusion.</i>
 			</span>			
         </div>
 		
@@ -92,7 +96,7 @@
 			<div class="circle">3</div>
             <span class="tooltiptext">
 				<h4>Duration</h4>
-				<i>[description do be done]</i>
+				<i>The Duration of each activity must not exceed 2 months for detailed schedules.</i>
 			</span>			
         </div>
 		
@@ -101,7 +105,7 @@
 			<div class="circle">4</div>
             <span class="tooltiptext">
 				<h4>Physical Progress</h4>
-				<i>[description do be done]</i>
+				<i>Physical Progress is the only way to get a proper measure of the work achieved (and by extension the remaining work).</i>
 			</span>			
         </div>
 		
@@ -110,7 +114,7 @@
 			<div class="circle">5</div>
             <span class="tooltiptext">
 				<h4>Main Milestones</h4>
-				<i>[description do be done]</i>
+				<i>Usually, the Main Milestones of the project are grouped at the beginning of the schedule.</i>
 			</span>			
         </div>
 		
@@ -119,7 +123,7 @@
 			<div class="circle">6</div>
             <span class="tooltiptext">
 				<h4>Start Milestone</h4>
-				<i>[description do be done]</i>
+				<i>The Start Milestone clearly defines the start of the project.</i>
 			</span>			
         </div>
 		
@@ -128,7 +132,7 @@
 			<div class="circle">7</div>
             <span class="tooltiptext">
 				<h4>Finish Milestone</h4>
-				<i>[description do be done]</i>
+				<i>The Finish Milestone clearly defines the end of the project.</i>
 			</span>			
         </div>
 		
@@ -137,7 +141,7 @@
 			<div class="circle">8</div>
             <span class="tooltiptext">
 				<h4>Interfaces: Inputs</h4>
-				<i>[description do be done]</i>
+				<i>Interfaces Inputs gather all information needed to perform the work. The content and delivery date must be agreed upon.</i>
 			</span>			
         </div>
 		
@@ -146,7 +150,7 @@
 			<div class="circle">9</div>
             <span class="tooltiptext">
 				<h4>Interfaces: Outputs</h4>
-				<i>[description do be done]</i>
+				<i>Interfaces Outputs gather all information needed to be delivered by the project. The content and delivery date must be agreed upon.</i>
 			</span>			
         </div>
 		
@@ -155,7 +159,7 @@
 			<div class="circle" style="background: #5CC29D">10</div>
             <span class="tooltiptext">
 				<h4>Actuals</h4>
-				<i>[description do be done]</i>
+				<i>All activities in the past must be Actuals. No remaining work in the past.</i>
 			</span>			
         </div>
 		
@@ -164,7 +168,7 @@
 			<div class="circle" style="background: #3781EC">11</div>
             <span class="tooltiptext">
 				<h4>Planned Activities</h4>
-				<i>[description do be done]</i>
+				<i>Planned Activities represent the activities after the data date. No actuals must be recorded in the future.</i>
 			</span>			
         </div>
 		
@@ -173,7 +177,7 @@
 			<div class="circle" style="background: #FF5338">12</div>
             <span class="tooltiptext">
 				<h4>Critical Path</h4>
-				<i>[description do be done]</i>
+				<i>The Critical Path is the longest path of the project: any delay on the Critical Path will directly impact the end.</i>
 			</span>			
         </div>
 		
@@ -182,7 +186,7 @@
 			<div class="circle">13</div>
             <span class="tooltiptext">
 				<h4>Constraints</h4>
-				<i>[description do be done]</i>
+				<i>Constraints must be used only for showing important dates that must be achieved (in this case the SOP and the End of FPQ)</i>
 			</span>			
         </div>
 		
