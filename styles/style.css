@@ -45,6 +45,11 @@ hr.rounded {
 	margin: 25px;
 }
 
+hr.flat {
+	"border-top: 0.8px solid white;
+	margin: 5px;
+}
+
 /* Define tooltip class */
 .tooltip {
 	position: absolute;
@@ -55,7 +60,8 @@ hr.rounded {
 
 .tooltip .tooltiptext {
 	visibility: hidden;
-	width: 8em;
+	min-width: 8em;
+	width: auto;
 	background-color: #3F3F3F;
 	color: #fff;
 	font-size: 0.9em;
