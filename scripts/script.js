@@ -1,8 +1,5 @@
-// Script JS pour l'affichage des liens
-
-var linksHidden = true
-var baselineHidden = true
-
+var linksHidden = true;
+var baselineHidden = true;
 
 document.addEventListener('DOMContentLoaded', function () {
 	const imageTwo = document.getElementById('imageTwo');
@@ -34,34 +31,28 @@ document.addEventListener('DOMContentLoaded', function () {
 			imageThree.style.opacity = '0';
 		}
 	});	
+	
+	buttonLinks.addEventListener('click', function () {
+		toggleVisibility(imageTwo, buttonLinks, 'linksHidden');
+	});
+	
+	buttonBaseline.addEventListener('click', function () {
+		toggleVisibility(imageThree, buttonBaseline, 'baselineHidden');
+	});
+	
+	buttonQuality.addEventListener('click', function () {
+		window.open('quality_report.html','_blank','width=800,height=600');
+	});
 });
 
-function showLinks () {
-	if (linksHidden) {
-		imageTwo.style.opacity = '1';
-		buttonLinks.classList.add('active');
-		linksHidden = false;
+function toggleVisibility(imageElement, buttonElement, hiddenFlag) {
+	if (window[hiddenFlag]) {
+		imageElement.style.opacity = '1';
+		buttonElement.classList.add('active');
+		window[hiddenFlag] = false;
+	} else {
+		imageElement.style.opacity = '0';
+		buttonElement.classList.remove('active');
+		window[hiddenFlag] = true;
 	}
-	else {
-		imageTwo.style.opacity = '0';
-		buttonLinks.classList.remove('active');
-		linksHidden = true;
-	}
-};
-
-function showBaseline () {
-	if (baselineHidden) {
-		imageThree.style.opacity = '1';
-		buttonBaseline.classList.add('active');
-		baselineHidden = false;
-	}
-	else {
-		imageThree.style.opacity = '0';
-		buttonBaseline.classList.remove('active');
-		baselineHidden = true;
-	}
-};
-
-function qualityReport() {
-	newWindow = window.open('quality_report.html','_blank','width=800,height=600');
-};
+}
