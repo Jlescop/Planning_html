@@ -35,6 +35,10 @@ ul {
 	margin-bottom: 5px;
 }
 
+a {
+	color: #4DAFDE;
+}
+
 hr.rounded {
   border-top: 3px solid #2C2B64;
   border-radius: 10px;
