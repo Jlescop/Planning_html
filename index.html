@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule must have</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="icone_cop.ico">
+</head>
+<script src="script.js" defer></script>
+<body>
+	
+	<div> <!-- Introduction text -->
+		<h1> Schedule Must Have </h1>
+		<p> The schedule below has been realised to control a smal industrialization project with: </p>
+			<ul>
+				<li> A Design phase based on specifications shared as main input </li>
+				<li> A Procurement phase to identify an external supplier that will produce some parts for qualification </li>
+				<li> A Test and Validation phase to confirm the part is ready for serial manufacturing </li>
+			</ul>
+		<p> During the course of the project, <b><i style="color: #2B2C64;"> Final Design: 3D models and drawing </i></b> has been delayed. To complete the <b><i style="color: #2B2C64;">Start of Production</i></b> milestone on time, the design activity has been split to allow <i> partial release </i> to anticipate some works. </p>
+		
+		<p style="color: #3781EC; font-size: 15px; font-weight: bold"> Explore the schedule in its different points of interest to understand it!</p>
+		
+		<hr class="rounded"></hr>
+		
+	</div>
+	
+	<div> <!-- Buttons -->
+		<div class="tooltip" style="position: relative; margin-left: 50px; margin-right: 25px; margin-bottom: 15px">
+			<button onclick="showLinks()" id="buttonLinks" class="bBtn" type="button">Show links</button>
+			<span class="tooltiptext">
+				<h4>Links (or Relationships)</h4>
+				blablabl
+			</span>
+		</div>
+
+		<div class="tooltip" style="position: relative; margin-left: 25px; margin-right: 25px; margin-bottom: 15px">
+			<button onclick="showBaseline()" id="buttonBaseline" class="yBtn" type="button">Show baseline</button>
+			<span class="tooltiptext">
+				<h4>Baseline (or Reference)</h4>
+				blablabl
+			</span>
+		</div>
+		
+		<div class="tooltip" style="position: relative; margin-left: 25px; margin-right: 25px; margin-bottom: 15px">
+			<button onclick="qualityReport()" id="buttonQuality" class="bBtn" type="bBtn">Show quality report</button>
+		</div>
+	</div>
+	
+    <div class="image-container" style="margin-top: 30px"> <!-- Images et Tips -->
+	
+		<!-- Schedule as picture -->
+		
+		<img id="imageOne" class="imageOne" src="Sample_schedule.png" alt="Sample schedule">
+		
+		<img id="imageTwo" class="imageTwo" src="Sample_schedule_links.png" alt="Sample schedule with links">
+		
+		<img id="imageThree" class="imageThree" src="Sample_schedule_baseline.png" alt="Sample schedule with baseline">
+		
+		<!-- TOOLTIPS -->
+		
+		<!-- Data Date -->
+        <div class="tooltip" style="top: -18px; left: 56.4%">
+			<div class="triangle-bottom"></div>
+            <span class="tooltiptext">
+				<h4>Data Date</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>		
+		
+		<!-- 1. WBS Strutcture -->		
+        <div class="tooltip" style="top: -2%; left: 6%">
+			<div class="circle">1</div>
+            <span class="tooltiptext">
+				<h4>WBS & Unique ID</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>
+
+		<!-- 2. Activity Names -->
+        <div class="tooltip" style="top: -2%; left: 13%">
+			<div class="circle">2</div>
+            <span class="tooltiptext">
+				<h4>Activity Name</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>
+		
+		<!-- 3. Duration -->
+        <div class="tooltip" style="top: -2%; left: 20%">
+			<div class="circle">3</div>
+            <span class="tooltiptext">
+				<h4>Duration</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>
+		
+		<!-- 4. Physcial Progress -->
+        <div class="tooltip" style="top: -2%; left: 23.6%">
+			<div class="circle">4</div>
+            <span class="tooltiptext">
+				<h4>Physical Progress</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>
+		
+		<!-- 5. Main Milestones -->
+        <div class="tooltip" style="top: 7%; left: 66%">
+			<div class="circle">5</div>
+            <span class="tooltiptext">
+				<h4>Main Milestones</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>
+		
+		<!-- 6. Start Milestone -->
+        <div class="tooltip" style="top: 18%; left: 37%">
+			<div class="circle">6</div>
+            <span class="tooltiptext">
+				<h4>Start Milestone</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>
+		
+		<!-- 7. Finish Milestone -->
+        <div class="tooltip" style="top: 13%; left: 93%">
+			<div class="circle">7</div>
+            <span class="tooltiptext">
+				<h4>Finish Milestone</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>
+		
+		<!-- 8. Interfaces: Inputs -->
+        <div class="tooltip" style="top: 17%; left: 49%">
+			<div class="circle">8</div>
+            <span class="tooltiptext">
+				<h4>Interfaces: Inputs</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>
+		
+		<!-- 9. Interfaces: Outputs -->
+        <div class="tooltip" style="top: 23.5%; left: 82.5%">
+			<div class="circle">9</div>
+            <span class="tooltiptext">
+				<h4>Interfaces: Outputs</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>
+		
+		<!-- 10. Actuals -->
+        <div class="tooltip" style="top: 45%; left: 48%">
+			<div class="circle" style="background: #5CC29D">10</div>
+            <span class="tooltiptext">
+				<h4>Actuals</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>
+		
+		<!-- 11. Planned Activities -->
+        <div class="tooltip" style="top: 50%; left: 70%">
+			<div class="circle" style="background: #3781EC">11</div>
+            <span class="tooltiptext">
+				<h4>Planned Activities</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>
+		
+		<!-- 12. Critical Path -->
+        <div class="tooltip" style="top: 78%; left: 78%">
+			<div class="circle" style="background: #FF5338">12</div>
+            <span class="tooltiptext">
+				<h4>Critical Path</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>
+		
+		<!-- 13. Constraints -->
+        <div class="tooltip" style="top: 12%; left: 2%">
+			<div class="circle">13</div>
+            <span class="tooltiptext">
+				<h4>Constraints</h4>
+				<i>[description do be done]</i>
+			</span>			
+        </div>
+		
+        <!-- Add more tooltips as needed -->
+    </div>
+	<div> <!-- Conclusion text -->
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar porta risus, id dignissim est pharetra ut. Morbi sodales, elit nec elementum commodo, ipsum nunc lobortis leo, in efficitur orci risus nec purus. Duis vitae dapibus nulla.</p> 
+	</div>
+</body>
+</html>
