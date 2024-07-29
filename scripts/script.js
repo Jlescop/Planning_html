@@ -63,5 +63,5 @@ function showBaseline () {
 };
 
 function qualityReport() {
-	newWindow = window.open('quality_report.html','_blank', ,'noopener', 'width=800,height=600');
+	newWindow = window.open('quality_report.html','_blank','width=800,height=600');
 };
