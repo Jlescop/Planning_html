@@ -4,199 +4,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scheduling Best Practices and Core Guidelines</title>
-	<link rel="stylesheet" href="styles/style.css">
-	<link rel="icon" type="image/x-icon" href="images/icone_cop.ico">
-	<link rel="prerender" href="images/Sample_schedule_links.png"> 
-	
+    <meta name="description" content="Best practices and guidelines for scheduling an industrialization project.">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icone_cop.ico">
+    <link rel="prerender" href="images/Sample_schedule_links.png"> 
 </head>
 <script src="scripts/script.js" defer></script>
 <body>
-	
-	<div> <!-- Introduction text -->
-		<h1> Scheduling Best Practices and Core Guidelines </h1>
-		<p> The schedule below has been realised to control a smal industrialization project with: </p>
-			<ul>
-				<li> A Design phase based on specifications shared as main input </li>
-				<li> A Procurement phase to identify an external supplier that will produce some parts for qualification </li>
-				<li> A Test and Validation phase to confirm the part is ready for serial manufacturing </li>
-			</ul>
-		<p> During the course of the project, <b><i style="color: #2B2C64;"> Final Design: 3D models and drawing </i></b> has been delayed. To complete the <b><i style="color: #2B2C64;">Start of Production</i></b> milestone on time, the design activity has been split to allow <i> partial release </i> to anticipate some works. </p>
-		
-		<p style="color: #3781EC; font-size: 15px; font-weight: bold"> Explore the schedule in its different points of interest to understand it!</p>
-		
-		<hr class="rounded"></hr>
-		
-	</div>
-	
-	<div> <!-- Buttons -->
-		<!-- Links -->
-		<div class="tooltip" style="position: relative; margin-left: 50px; margin-right: 25px; margin-bottom: 15px">
-			<button onclick="showLinks()" id="buttonLinks" class="bBtn" type="button">Show links</button>
-			<span class="tooltiptext" style="background-color: #2C2B64">
-				<h4>Links (or Relationships)</h4>
-				<hr class="flat"</hr>
-				Links are essential for building a good schedule. They represent the logic between activities.
-			</span>
-		</div>
+    <div> <!-- Introduction text -->
+        <h1> Scheduling Best Practices and Core Guidelines </h1>
+        <p> The schedule below has been realised to control a smal industrialization project with: </p>
+            <ul>
+                <li> A Design phase based on specifications shared as main input </li>
+                <li> A Procurement phase to identify an external supplier that will produce some parts for qualification </li>
+                <li> A Test and Validation phase to confirm the part is ready for serial manufacturing </li>
+            </ul>
+        <p> During the course of the project, <b><i style="color: #2B2C64;"> Final Design: 3D models and drawing </i></b> has been delayed. To complete the <b><i style="color: #2B2C64;">Start of Production</i></b> milestone on time, the design activity has been split to allow <i> partial release </i> to anticipate some works. </p>
+        
+        <p style="color: #3781EC; font-size: 15px; font-weight: bold"> Explore the schedule in its different points of interest to understand it!</p>
+        
+        <hr class="rounded"></hr>
+        
+    </div>
+    
+    <div class="container"> <!-- Buttons and Bar-->
+        <div class="container">
+            <!-- Links -->
+            <div class="tooltip" style="position: relative">
+                <button id="b1" class="bBtn" type="button" aria-label="Show links">Show links</button>
+                <span class="tooltiptext" style="background-color: #2C2B64">
+                    <h4>Links (or Relationships)</h4>
+                    <hr class="flat"></hr>
+                    Links are essential for building a good schedule. They represent the logic between activities.
+                </span>
+            </div>
 
-		<!-- Baseline -->
-		<div class="tooltip" style="position: relative; margin-left: 25px; margin-right: 25px; margin-bottom: 15px">
-			<button onclick="showBaseline()" id="buttonBaseline" class="yBtn" type="button">Show baseline</button>
-			<span class="tooltiptext" style="background-color: #F2CB13">
-				<h4>Baseline (or Reference)</h4>
-				The Baseline is essential to measure the performance of the project. It has to be agreed upon with all stakeholders.
-			</span>
-		</div>
+            <!-- Baseline -->
+            <div class="tooltip" style="position: relative">
+                <button id="b2" class="yBtn" type="button" aria-label="Show baseline">Show baseline</button>
+                <span class="tooltiptext" style="background-color: #F2CB13">
+                    <h4>Baseline (or Reference)</h4>
+                    <hr class="flat"></hr>
+                    The Baseline is essential to measure the performance of the project. It has to be agreed upon with all stakeholders.
+                </span>
+            </div>
 
-		<!-- Quality Report -->
-		<div class="tooltip" style="position: relative; margin-left: 25px; margin-right: 25px; margin-bottom: 15px">
-			<button onclick="qualityReport()" id="buttonQuality" class="bBtn" type="bBtn">Show quality report</button>
-		</div>
-	</div>
-	
+            <!-- Quality Report -->
+            <div class="tooltip" style="position: relative">
+                <button id="b3" class="bBtn" type="bBtn" aria-label="Show quality report">Show quality report</button>
+            </div>
+        </div>
+
+        <div>
+            <!-- Progress bar -->
+            <div>
+                <h3> Schedule elements checked </h3>
+            
+                <progress id="p1" value="0" max="18" class="html5">                
+                    <div class="progress-bar" style="center"></div>
+                </progress>
+            </div>
+            <div>
+                <img id="brass" src="images/brass.png" alt="brass medal" style="width: 30px; height:auto; margin-left: 36%; margin-top: 2%; opacity: 0.2; transition: opacity 1s;">
+                <img id="silver" src="images/silver.png" alt="silver medal" style="width: 30px; height:auto; margin-left: 26%; margin-top: 2%; opacity: 0.2; transition: opacity 0.8s;">
+                <img id="gold" src="images/gold.png" alt="gold medal" style="width: 30px; height:auto; margin-left: 18%; margin-top: 2%; opacity: 0.2; transition: opacity 0.5s;">
+            </div>
+        </div>
+        
+    </div>
+    
     <div class="image-container" style="margin-top: 30px"> <!-- Images et Tips -->
-	
-		<!-- Schedule as picture -->
-		
-		<img id="imageOne" class="imageOne" src="images/Sample_schedule.png" alt="Sample schedule">
-		
-		<img id="imageTwo" class="imageTwo" src="images/Sample_schedule_links.png" alt="Sample schedule with links">
-		
-		<img id="imageThree" class="imageThree" src="images/Sample_schedule_baseline.png" alt="Sample schedule with baseline">
-		
-		<!-- TOOLTIPS -->
-		
-		<!-- Data Date -->
+        <!-- Schedule as picture -->
+        <img id="imageOne" class="imageOne" src="images/Sample_schedule.png" alt="Sample schedule" loading="lazy">
+        <img id="imageTwo" class="imageTwo" src="images/Sample_schedule_links.png" alt="Sample schedule with links" loading="lazy">
+        <img id="imageThree" class="imageThree" src="images/Sample_schedule_baseline.png" alt="Sample schedule with baseline" loading="lazy">
+
+        <!-- TOOLTIPS -->
+        <!-- Data Date -->
         <div class="tooltip" style="top: -18px; left: 56.4%">
-			<div class="triangle-bottom"></div>
+            <div class="triangle-bottom"></div>
             <span class="tooltiptext">
-				<h4>Data Date</h4>
-				The Data Date is the latest update date. It differs from the current date.
-			</span>			
-        </div>		
-		
-		<!-- 1. WBS Strutcture -->		
-        <div class="tooltip" style="top: -2%; left: 6%">
-			<div class="circle">1</div>
+                <h4>Data Date</h4>
+                <hr class="flat"></hr>
+                The Data Date is the latest update date. It differs from the current date.
+            </span>            
+        </div>        
+        
+        <!-- 1. WBS Strutcture -->        
+        <div id=1 class="tooltip" style="top: -2%; left: 6%">
+            <div class="circle">1</div>
             <span class="tooltiptext">
-				<h4>WBS & Unique ID</h4>
-				The WBS is clearly defined and follows the project's structure.
-				Every Activity has a unique identifier.
-			</span>			
+                <h4>WBS & Unique ID</h4>
+                <hr class="flat"></hr>
+                The WBS is clearly defined and follows the project's structure.
+                Every Activity has a unique identifier.
+            </span>            
         </div>
 
-		<!-- 2. Activity Names -->
-        <div class="tooltip" style="top: -2%; left: 13%">
-			<div class="circle">2</div>
+        <!-- 2. Activity Names -->
+        <div id=2 class="tooltip" style="top: -2%; left: 13%">
+            <div class="circle">2</div>
             <span class="tooltiptext">
-				<h4>Activity Name</h4>
-				The Activity Name must be clear to avoid any confusion.
-			</span>			
+                <h4>Activity Name</h4>
+                <hr class="flat"></hr>
+                The Activity Name must be clear to avoid any confusion.
+            </span>            
         </div>
-		
-		<!-- 3. Duration -->
-        <div class="tooltip" style="top: -2%; left: 20%">
-			<div class="circle">3</div>
+        
+        <!-- 3. Duration -->
+        <div id=3 class="tooltip" style="top: -2%; left: 20%">
+            <div class="circle">3</div>
             <span class="tooltiptext">
-				<h4>Duration</h4>
-				The Duration of each activity must not exceed 2 months for detailed schedules.
-			</span>			
+                <h4>Duration</h4>
+                <hr class="flat"></hr>
+                The Duration of each activity must not exceed 2 months for detailed schedules.
+            </span>            
         </div>
-		
-		<!-- 4. Physcial Progress -->
-        <div class="tooltip" style="top: -2%; left: 23.6%">
-			<div class="circle">4</div>
+        
+        <!-- 4. Physcial Progress -->
+        <div id=4 class="tooltip" style="top: -2%; left: 23.6%">
+            <div class="circle">4</div>
             <span class="tooltiptext">
-				<h4>Physical Progress</h4>
-				Physical Progress is the only way to get a proper measure of the work achieved (and by extension the remaining work).
-			</span>			
+                <h4>Physical Progress</h4>
+                <hr class="flat"></hr>
+                Physical Progress is the only way to get a proper measure of the work achieved (and by extension the remaining work).
+            </span>            
         </div>
-		
-		<!-- 5. Main Milestones -->
-        <div class="tooltip" style="top: 7%; left: 66%">
-			<div class="circle">5</div>
+        
+        <!-- 5. Main Milestones -->
+        <div id=5 class="tooltip" style="top: 7%; left: 66%">
+            <div class="circle">5</div>
             <span class="tooltiptext">
-				<h4>Main Milestones</h4>
-				Usually, the Main Milestones of the project are grouped at the beginning of the schedule.
-			</span>			
+                <h4>Main Milestones</h4>
+                <hr class="flat"></hr>
+                Usually, the Main Milestones of the project are grouped at the beginning of the schedule.
+            </span>            
         </div>
-		
-		<!-- 6. Start Milestone -->
-        <div class="tooltip" style="top: 18%; left: 37%">
-			<div class="circle">6</div>
+        
+        <!-- 6. Start Milestone -->
+        <div id=6 class="tooltip" style="top: 18%; left: 37%">
+            <div class="circle">6</div>
             <span class="tooltiptext">
-				<h4>Start Milestone</h4>
-				The Start Milestone clearly defines the start of the project.
-			</span>			
+                <h4>Start Milestone</h4>
+                <hr class="flat"></hr>
+                The Start Milestone clearly defines the start of the project.
+            </span>            
         </div>
-		
-		<!-- 7. Finish Milestone -->
-        <div class="tooltip" style="top: 13%; left: 93%">
-			<div class="circle">7</div>
+        
+        <!-- 7. Finish Milestone -->
+        <div id=7 class="tooltip" style="top: 13%; left: 93%">
+            <div class="circle">7</div>
             <span class="tooltiptext">
-				<h4>Finish Milestone</h4>
-				The Finish Milestone clearly defines the end of the project.
-			</span>			
+                <h4>Finish Milestone</h4>
+                <hr class="flat"></hr>
+                The Finish Milestone clearly defines the end of the project.
+            </span>            
         </div>
-		
-		<!-- 8. Interfaces: Inputs -->
-        <div class="tooltip" style="top: 17%; left: 49%">
-			<div class="circle">8</div>
+        
+        <!-- 8. Interfaces: Inputs -->
+        <div id=8 class="tooltip" style="top: 17%; left: 49%">
+            <div class="circle">8</div>
             <span class="tooltiptext">
-				<h4>Interfaces: Inputs</h4>
-				Interfaces Inputs gather all information needed to perform the work. The content and delivery date must be agreed upon.
-			</span>			
+                <h4>Interfaces: Inputs</h4>
+                <hr class="flat"></hr>
+                Interfaces Inputs gather all information needed to perform the work. The content and delivery date must be agreed upon.
+            </span>            
         </div>
-		
-		<!-- 9. Interfaces: Outputs -->
-        <div class="tooltip" style="top: 23.5%; left: 82.5%">
-			<div class="circle">9</div>
+        
+        <!-- 9. Interfaces: Outputs -->
+        <div id=9 class="tooltip" style="top: 23.5%; left: 82.5%">
+            <div class="circle">9</div>
             <span class="tooltiptext">
-				<h4>Interfaces: Outputs</h4>
-				Interfaces Outputs gather all information needed to be delivered by the project. The content and delivery date must be agreed upon.
-			</span>			
+                <h4>Interfaces: Outputs</h4>
+                <hr class="flat"></hr>
+                Interfaces Outputs gather all information needed to be delivered by the project. The content and delivery date must be agreed upon.
+            </span>            
         </div>
-		
-		<!-- 10. Actuals -->
-        <div class="tooltip" style="top: 45%; left: 48%">
-			<div class="circle" style="background: #5CC29D">10</div>
+        
+        <!-- 10. Actuals -->
+        <div id=10 class="tooltip" style="top: 45%; left: 48%">
+            <div class="circle" style="background: #5CC29D">10</div>
             <span class="tooltiptext" style="background: #5CC29D">
-				<h4>Actuals</h4>
-				All activities in the past must be Actuals. No remaining work in the past.
-			</span>			
+                <h4>Actuals</h4>
+                <hr class="flat"></hr>
+                All activities in the past must be Actuals. No remaining work in the past.
+            </span>            
         </div>
-		
-		<!-- 11. Planned Activities -->
-        <div class="tooltip" style="top: 50%; left: 70%">
-			<div class="circle" style="background: #3781EC">11</div>
+        
+        <!-- 11. Planned Activities -->
+        <div id=11 class="tooltip" style="top: 50%; left: 70%">
+            <div class="circle" style="background: #3781EC">11</div>
             <span class="tooltiptext" style="background: #3781EC">
-				<h4>Planned Activities</h4>
-				Planned Activities represent the activities after the data date. No actuals must be recorded in the future.
-			</span>			
+                <h4>Planned Activities</h4>
+                <hr class="flat"></hr>
+                Planned Activities represent the activities after the data date. No actuals must be recorded in the future.
+            </span>            
         </div>
-		
-		<!-- 12. Critical Path -->
-        <div class="tooltip" style="top: 78%; left: 78%">
-			<div class="circle" style="background: #FF5338">12</div>
+        
+        <!-- 12. Critical Path -->
+        <div id=12 class="tooltip" style="top: 78%; left: 78%">
+            <div class="circle" style="background: #FF5338">12</div>
             <span class="tooltiptext" style="background: #FF5338">
-				<h4>Critical Path</h4>
-				The Critical Path is the longest path of the project: any delay on the Critical Path will directly impact the end.
-			</span>			
+                <h4>Critical Path</h4>
+                <hr class="flat"></hr>
+                The Critical Path is the longest path of the project: any delay on the Critical Path will directly impact the end.
+            </span>            
         </div>
-		
-		<!-- 13. Constraints -->
-        <div class="tooltip" style="top: 12%; left: 2%">
-			<div class="circle">13</div>
+        
+        <!-- 13. Constraints -->
+        <div id=13 class="tooltip" style="top: 12%; left: 2%">
+            <div class="circle">13</div>
             <span class="tooltiptext">
-				<h4>Constraints</h4>
-				Constraints must be used only for showing important dates that must be achieved (in this case the SOP and the End of FPQ)
-			</span>			
+                <h4>Constraints</h4>
+                <hr class="flat"></hr>
+                Constraints must be used only for showing important dates that must be achieved (in this case the SOP and the End of FPQ)
+            </span>            
+        </div>
+        
+        <!-- Star BL Act. 21 -->
+        <div id="s1" class="tooltip" style="top: 46%; left: 59%; visibility: hidden">
+            <div class="circle" style="background: #F2CB13">★</div>
+            <span class="tooltiptext" style="background-color: #F2CB13">
+                <h4>No Baseline?</h4>
+                <hr class="flat"></hr>
+                [Description]
+            </span>            
         </div>
 		
+		<!-- Star Physical Progress Act. 21 -->
+        <div id="s2" class="tooltip" style="top: 46%; left: 54%">
+            <div class="circle" style="background: #5CC29D">★</div>
+            <span class="tooltiptext" style="background-color: #5CC29D">
+                <h4>Strange Progress!</h4>
+                <hr class="flat"></hr>
+                [Description]
+            </span>            
+        </div>
+        
         <!-- Add more tooltips as needed -->
     </div>
-	<div> <!-- Conclusion text -->
-		<p> More information is available in the <a href="https://sway.cloud.microsoft/thb8l3CZdjr4iFmO?ref=Link" target="_blank" rel="noopener noreferrer"> Schedule Methodology </a></p> 
-	</div>
+    <div> <!-- Conclusion text -->
+        <p> More information is available in the <a href="https://sway.cloud.microsoft/thb8l3CZdjr4iFmO?ref=Link" target="_blank" rel="noopener noreferrer"> Schedule Methodology </a></p> 
+    </div>
 </body>
 </html>
