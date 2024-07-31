@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1px;
+    font-size: 1em;
     padding: 5px;
     color: var(--primary-color);
     text-align: center;
