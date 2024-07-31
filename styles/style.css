@@ -83,7 +83,23 @@ hr.flat {
     align-items: center;
     height: 60px;
     padding: 0px 100px 0px 50px;
+    background-color: white; /* Optional: to avoid overlap */
 }
+
+.sticky-container {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white; /* Optional: to avoid overlap */
+}
+
+.intro-text {
+    padding: 20px;
+}
+
+/* Add any existing CSS rules you have here */
+
 
 /* Define tooltip class */
 .tooltip {    
