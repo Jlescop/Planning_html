@@ -11,66 +11,66 @@
 </head>
 <script src="scripts/script.js" defer></script>
 <body>
-    <div class="sticky-container">
-        <div class="intro-text" style="font-size: 20px"> <!-- Introduction text -->
-            <h1> Scheduling Best Practices and Core Guidelines </h1>
-            <p> The schedule below has been created to manage a small industrialization project, consisting of: </p>
-                <ul>
-                    <li> A Design phase based on shared specifications as the main input </li>
-                    <li> A Procurement phase to identify an external supplier for producing parts for qualification </li>
-                    <li> A Test and Validation phase to ensure the part is ready for serial manufacturing </li>
-                </ul>
-            <p> During the project, <b><i style="color: #2B2C64;"> Final Design: 3D models and drawing </i></b> was delayed. To meet the <b><i style="color: #2B2C64;">Start Of Production</i></b> milestone on time, the design activity was divided to allow <i> partial release </i> and expedite certain tasks. </p>
-            
-            <p style="color: #3781EC; font-size: 25px; font-weight: bold"> Explore the schedule's various points of interest to gain a better understanding!</p>
-            
-            <hr class="rounded"></hr>
-        </div>
+    <div style="font-size: 20px"> <!-- Introduction text -->
+        <h1> Scheduling Best Practices and Core Guidelines </h1>
+        <p> The schedule below has been created to manage a small industrialization project, consisting of: </p>
+            <ul>
+                <li> A Design phase based on shared specifications as the main input </li>
+                <li> A Procurement phase to identify an external supplier for producing parts for qualification </li>
+                <li> A Test and Validation phase to ensure the part is ready for serial manufacturing </li>
+            </ul>
+        <p> During the project, <b><i style="color: #2B2C64;"> Final Design: 3D models and drawing </i></b> was delayed. To meet the <b><i style="color: #2B2C64;">Start Of Production</i></b> milestone on time, the design activity was divided to allow <i> partial release </i> and expedite certain tasks. </p>
         
-        <div class="container"> <!-- Buttons and Bar-->
-            <div class="container">
-                <!-- Links -->
-                <div class="tooltip" style="position: relative">
-                    <button id="b1" class="bBtn" type="button" aria-label="Show links">Show links</button>
-                    <span class="tooltiptext" style="background-color: #2C2B64">
-                        <h4>Links (or Relationships)</h4>
-                        <hr class="flat"></hr>
-                        Links are essential for building a good schedule. They represent the logic between activities.
-                    </span>
-                </div>
-
-                <!-- Baseline -->
-                <div class="tooltip" style="position: relative">
-                    <button id="b2" class="yBtn" type="button" aria-label="Show baseline">Show baseline</button>
-                    <span class="tooltiptext" style="background-color: #F2CB13">
-                        <h4>Baseline (or Reference)</h4>
-                        <hr class="flat"></hr>
-                        The Baseline is essential to measure the performance of the project. It has to be agreed upon with all stakeholders.
-                    </span>
-                </div>
-
-                <!-- Quality Report -->
-                <div class="tooltip" style="position: relative">
-                    <button id="b3" class="bBtn" type="bBtn" aria-label="Show quality report">Show quality report</button>
-                </div>
+        <p style="color: #3781EC; font-size: 25px; font-weight: bold"> Explore the schedule's various points of interest to gain a better understanding!</p>
+        
+        <hr class="rounded"></hr>
+        
+    </div>
+    
+    <div class="container"> <!-- Buttons and Bar-->
+        <div class="container">
+            <!-- Links -->
+            <div class="tooltip" style="position: relative">
+                <button id="b1" class="bBtn" type="button" aria-label="Show links">Show links</button>
+                <span class="tooltiptext" style="background-color: #2C2B64">
+                    <h4>Links (or Relationships)</h4>
+                    <hr class="flat"></hr>
+                    Links are essential for building a good schedule. They represent the logic between activities.
+                </span>
             </div>
 
-            <div>
-                <!-- Progress bar -->
-                <div>
-                    <h3> Schedule elements checked </h3>
-                
-                    <progress id="p1" value="0" max="19" class="html5">                
-                        <div class="progress-bar" style="center"></div>
-                    </progress>
-                </div>
-                <div>
-                    <img id="brass" src="images/brass.png" alt="brass medal" style="width: 30px; height:auto; margin-left: 154px; margin-top: 2%; opacity: 0.2; transition: opacity 1s;">
-                    <img id="silver" src="images/silver.png" alt="silver medal" style="width: 30px; height:auto; margin-left: 154px; margin-top: 2%; opacity: 0.2; transition: opacity 0.8s;">
-                    <img id="gold" src="images/gold.png" alt="gold medal" style="width: 30px; height:auto; margin-left: 131px; margin-top: 2%; opacity: 0.2; transition: opacity 0.5s;">
-                </div>
-            </div>	        
+            <!-- Baseline -->
+            <div class="tooltip" style="position: relative">
+                <button id="b2" class="yBtn" type="button" aria-label="Show baseline">Show baseline</button>
+                <span class="tooltiptext" style="background-color: #F2CB13">
+                    <h4>Baseline (or Reference)</h4>
+                    <hr class="flat"></hr>
+                    The Baseline is essential to measure the performance of the project. It has to be agreed upon with all stakeholders.
+                </span>
+            </div>
+
+            <!-- Quality Report -->
+            <div class="tooltip" style="position: relative">
+                <button id="b3" class="bBtn" type="bBtn" aria-label="Show quality report">Show quality report</button>
+            </div>
         </div>
+
+        <div>
+            <!-- Progress bar -->
+            <div>
+                <h3> Schedule elements checked </h3>
+            
+                <progress id="p1" value="0" max="19" class="html5">                
+                    <div class="progress-bar" style="center"></div>
+                </progress>
+            </div>
+            <div>
+                <img id="brass" src="images/brass.png" alt="brass medal" style="width: 30px; height:auto; margin-left: 154px; margin-top: 2%; opacity: 0.2; transition: opacity 1s;">
+                <img id="silver" src="images/silver.png" alt="silver medal" style="width: 30px; height:auto; margin-left: 154px; margin-top: 2%; opacity: 0.2; transition: opacity 0.8s;">
+                <img id="gold" src="images/gold.png" alt="gold medal" style="width: 30px; height:auto; margin-left: 131px; margin-top: 2%; opacity: 0.2; transition: opacity 0.5s;">
+            </div>
+        </div>
+        
     </div>
     
     <div class="image-container" style="margin-top: 30px"> <!-- Images et Tips -->
@@ -227,11 +227,11 @@
             <span class="tooltiptext" style="background-color: #F2CB13">
                 <h4>No Baseline?</h4>
                 <hr class="flat"></hr>
-                You can notice this activity has no baseline, it has been added to reflect the split of 3D models and drawings.
+				You can notice this activity has no baseline, it has been added to reflect the split of 3D models and drawings.
             </span>            
         </div>
-        
-        <!-- Star Physical Progress Act. 21 -->
+		
+		<!-- Star Physical Progress Act. 21 -->
         <div id="s2" class="tooltip" style="top: 46%; left: 54%">
             <div class="circle" style="background: #5CC29D">★</div>
             <span class="tooltiptext" style="background-color: #5CC29D">
