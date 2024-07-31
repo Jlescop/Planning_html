@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     b3.addEventListener('click', () => {
-        window.open('quality_report.html', '_blank', 'width=600, height=900, toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no');
+        window.open('quality_report.html', '_blank', 'width=600, height=950, toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no');
     });
 
     function toggleVisibility(imageElement, buttonElement, hiddenFlag) {
