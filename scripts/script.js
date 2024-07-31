@@ -9,8 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const b1 = document.getElementById('b1');
     const b2 = document.getElementById('b2');
     const b3 = document.getElementById('b3');
+    const dd = document.getElementById('dd');
     const s1 = document.getElementById('s1');
-	const s2 = document.getElementById('s2');
+    const s2 = document.getElementById('s2');
     const p1 = document.getElementById('p1');
     const brass = document.getElementById('brass');
     const silver = document.getElementById('silver');
@@ -20,8 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
         {id: 'b1', hovers: 0},
         {id: 'b2', hovers: 0},
         {id: 'b3', hovers: 0},
+	{id: 'dd', hovers: 0},
         {id: 's1', hovers: 0},
-		{id: 's2', hovers: 0},
+	{id: 's2', hovers: 0},
         {id: 1, hovers: 0},
         {id: 2, hovers: 0},
         {id: 3, hovers: 0},
@@ -113,13 +115,13 @@ document.addEventListener('DOMContentLoaded', () => {
         p1.value = totalHovers;
 		console.log(totalHovers);
         switch (true) {
-            case (totalHovers == 18):
+            case (totalHovers == 19):
                 gold.style.opacity = '1';
                 p1.style.setProperty('--progress-bar-color', '#FFD700');
 				gold.classList.add('zoom-effect-3');
                 console.log('Gold');
                 break;
-            case (totalHovers >= 13):
+            case (totalHovers >= 14):
                 silver.style.opacity = '1';
                 p1.style.setProperty('--progress-bar-color', '#C0C0C0');
 				silver.classList.add('zoom-effect-2');
